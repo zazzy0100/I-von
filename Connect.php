@@ -15,7 +15,7 @@ if(isset($_POST['Connect'])){
   $query = "select * from Urec where Uemail='$email1' and Upswd= '$pswd1'";
   $reval=mysqli_query($con,$query);
   if(mysqli_num_rows($reval)==1){
-    header("location:open.php");}
+    header("location:open.htm");}
 
   else{
     echo"sorry network issue";
